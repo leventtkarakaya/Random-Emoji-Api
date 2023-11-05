@@ -7,7 +7,7 @@ const apiKey ="https://emoji-api.com/emojis?access_key=5bbdfcedd88f14e7e0e01a3aa
 
 async function addGetEmoji() {
     let response = await fetch(apiKey);
-    data = await response.json();
+    let data = await response.json();
     console.log(data);
     for (let i = 0; i < 1500; i++) {
         emoji.push({
